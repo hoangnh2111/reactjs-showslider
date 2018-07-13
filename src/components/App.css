@@ -1,0 +1,42 @@
+body{background:#fff;box-sizing:border-box;margin:0;padding:0}.container{width:80%;margin:0 auto}.slider-2{margin:0 auto}.containerImages{float:left;margin:1em 2px;padding:2px}.slider-2 img{vertical-align:middle;width:205px;height:115px;border-radius:2px 2px}.card-image{border-radius:2px 2px;max-width:205px;height:288px!important;background:#fff;border-radius:4px;position:relative;padding:4px;box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);display:block;overflow:hidden;-webkit-box-orient:vertical;white-space:normal;padding:0;margin:4px}.card-image a{text-decoration:none}.card-image a h5{padding:0 12px;font-weight:400;line-height:1.375em;font-size:16px}.slick-next::before,.slick-prev::before{font-size:0;line-height:1;opacity:1!important;width:36px;height:36px;position:absolute;border-radius:50%;content:''!important;box-shadow:0 0 0 1px rgba(0,0,0,0.04),0 4px 8px 0 rgba(0,0,0,0.20)}.slick-prev::before{background:url(./images/left-arrow-origin.png) #FFF center;background-size:11px;background-repeat:no-repeat}.slick-next::before{background:url(./images/right-arrow-origin.png) #FFF center;background-size:11px;background-repeat:no-repeat}.slick-next:before{right:2px}.slick-next{right:-20px!important}.slick-prev{left:-38px;position:absolute;z-index:2000}.slick-prev,.slick-next{padding:none}.mt-5{margin-top:50px}.slick-arrow.slick-disabled{display:none!important}
+
+.slick-slider{
+    height: 300px;
+    margin: 25px 35px;
+    border-spacing: 10px;
+    border-top: solid 1px rgba(0,0,0,0.13); 
+    padding: 0 2px 0 2px;
+}
+.slick-slider a{
+  color: #333;
+}
+.slider-wrapper p,.slider-wrapper .buttonFix{
+  margin: 10px 0 -2px 20px;
+}
+.slider-wrapper .buttonFix{
+  background-color: transparent;
+  border: solid 2px #ec5f5f;
+  color: #ec5f5f;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding: 2px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.slider-wrapper .buttonFix:hover{
+  background-color: #ec5f5f;
+  border: solid 2px #ec5f5f;
+  color: white;
+  letter-spacing: 2px;
+  padding: 2px 20px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.slider-wrapper p{
+ font-size: 16px;
+ color: #ec5f5f;
+}
+
+
