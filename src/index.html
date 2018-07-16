@@ -1,40 +1,75 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React Webpack</title>
 </head>
-<body>
-        <div id="app">    
-                <a href="http://kenh14.vn/14-dieu-bac-si-da-lieu-khuyen-ban-hay-dung-lam-ngay-neu-khong-muon-lan-da-ngay-cang-xuong-sac-20180704110905741.chn">14 điều bác sĩ da liễu khuyên bạn hãy dừng làm ngay nếu không muốn làn da ngày càng xuống sắc cần phải xem</a>
-                <br>
-                <a href="http://gamek.vn/15-game-mobile-the-loai-chien-thuat-thu-thanh-hay-nhat-tren-android-p1-20180711194754779.chn">15 game mobile thể loại chiến thuật thủ thành hay nhất trên Android (P1)</a>  
-                <br> 
-                <a href="http://afamily.vn/">Điểm thi của "Cậu bé Google" Phan Đăng Nhật Minh: Tiếng Anh 9,6 Văn 6,25</a>     
-                <br>
-                <a href="https://www.w3schools.com/tags/tag_doctype4.asp">Tiết lộ lý do ban đầu khiến đội bóng Thái Lan vào hang tham và 1 số yêu cầu khác</a>
-                <br>
-                <a href="https://www.w3schools.com/tags/tag_doctype5.asp">Tiết lộ lý do ban đầu khiến đội bóng Thái Lan vào hang tham và 1 số yêu cầu khác cần phải biết</a>     
-    </div>
 
-<script type="text/javascript">
-/** -- store url and width -- ***/ 
-[].forEach.call(document.getElementsByTagName('a'),function(el){
-        el.addEventListener('click',function(e){
-                    sessionStorage.setItem('url',el.href);
-                    const width = el.offsetWidth;  
-                    sessionStorage.setItem('sizeWidth',width) 
-        });
- }); 
-/** -- check current page width store url and width to fetch data -- ***/ 
-[].forEach.call(document.getElementsByTagName('a'),function(el){
-    if(el.href == sessionStorage.getItem('url')) {      
-            var node=document.createElement('div');
-            node.setAttribute("id","slider-content")        
-            el.after(node);
-    }                      
- }); 
- </script> 
+<body>
+    <div id="app">
+            <h3> Kết quả tìm kiếm</h3>
+        <div class="sugguestion">
+            <div class="card-link">
+                <a href="http://kenh14.vn/14-dieu-bac-si-da-lieu-khuyen-ban-hay-dung-lam-ngay-neu-khong-muon-lan-da-ngay-cang-xuong-sac-20180704110905741.chn">14 điều bác sĩ da liễu khuyên bạn hãy dừng làm ngay nếu không muốn làn da ngày càng xuống sắc cần phải xem</a>
+                <p class="description">Làm đẹp vốn là một trong những công việc tối quan trọng của các chị em. Tất nhiên, trong quá trình chăm sóc da, các nàng không thể tránh khỏi những sai lầm và 14 điều .... </p>
+                <hr>
+            </div>
+            <div class="card-link">
+                <a href="http://kenh14.vn/2-hay-dung-lam-ngay-neu-khong-muon-lan-da-ngay-cang-xuong-sac-20180704110905741.chn">14 điều bác sĩ da liễu khuyên bạn hãy dừng làm ngay nếu không muốn làn da ngày càng xuống sắc cần phải xem</a>
+                <hr>
+            </div>
+            <div class="card-link">
+                <a href="http://gamek.vn/15-game-mobile-the-loai-chien-thuat-thu-thanh-hay-nhat-tren-android-p1-20180711194754779.chn">15 game mobile thể loại chiến thuật thủ thành hay nhất trên Android (P1)</a>
+                <p class="description">"Thủ thành" - Tower Defense chính là một trong những thể loại game giải trí được yêu thích nhất trên nền tảng di động. </p>
+                <hr>
+            </div>
+
+            <div class="card-link">
+                <a href="http://afamily.vn/">Điểm thi của "Cậu bé Google" Phan Đăng Nhật Minh: Tiếng Anh 9,6 Văn 6,25</a>
+                <p class="description">Điểm thi của "Cậu bé Google" Phan Đăng Nhật Minh: Tiếng Anh 9,6 ... Cụ thể, điểm thi các môn của cậu là Toán 8,6; Ngữ văn 6,25; Vật lý 8,5; ... </p>
+                <hr>
+            </div>
+            <div class="card-link">
+                <a href="https://www.w3schools.com/tags/tag_doctype4.asp">ESPORT Hướng tới The International 2018 – Các cựu thần Trung Quốc liệu có làm nên chuyện?</a>
+                <hr>
+            </div>
+            <div class="card-link">
+                <a href="http://gamek.vn/lmht-cuu-tuyen-thu-cua-invictus-gaming-pdd-trum-rank-don-mot-thoi-bat-ngo-bi-chan-doan-mac-ung-thu-gan-20180716103040514.chn">LMHT: Cựu tuyển thủ của Invictus Gaming PDD - 'Trùm rank đơn' một thời bất ngờ bị chẩn đoán mắc ung thư gan</a>
+                <p class="description">PDD - Cựu tuyển thủ đường trên của iG và là một trong những tuyển thủ chuyên nghiệp thế hệ đầu tiên của LMHT, vừa xác nhận rằng anh đã mắc phải căn bệnh ung thư. </p>
+                <hr>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            /** -- store url and width -- ***/
+            [].forEach.call(document.getElementsByTagName('a'), function(el) {
+                el.addEventListener('click', function(e) {
+                    sessionStorage.setItem('url', el.href);
+                    const width = el.offsetWidth;
+                    sessionStorage.setItem('sizeWidth', width)
+                });
+            });
+            /** -- check current page with store url and width to fetch data -- ***/
+            [].forEach.call(document.getElementsByTagName('a'), function(el) {
+                if (el.href === sessionStorage.getItem('url')) {
+                    var node = document.createElement('div');
+                    node.setAttribute("id", "slider-content");
+                    el.after(node);
+                }
+            });
+
+            var allLink = document.getElementsByClassName("card-link");
+            //Check exist 
+            for (var i = 0; i <= allLink.length - 1; i++) {
+                if (allLink[i].childElementCount === 4) {
+                    //Swap
+                    allLink[i].insertBefore(allLink[i].childNodes.item(3), allLink[i].childNodes.item(0));
+                    allLink[i].insertBefore(allLink[i].childNodes.item(4), allLink[i].childNodes.item(3));
+                }
+            }
+        </script>
 </body>
+
 </html>
