@@ -94,5 +94,4 @@ function renderSlider(width){
   ReactDOM.render(<ShowSlider width={width} />,document.getElementById('slider-content'));
 }
 export default ShowSlider
- /* global function renderSlider() */
-window.mySlider = renderSlider()
+renderSlider()
